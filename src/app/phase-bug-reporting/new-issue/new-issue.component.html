@@ -22,17 +22,20 @@
           >
           </app-comment-editor>
         </div>
-
-        <button
-          style="float: right"
-          class="submit-new-bug-report"
-          type="submit"
-          mat-stroked-button
-          color="primary"
-          [disabled]="!newIssueForm.valid || isFormPending"
-        >
-          {{ this.submitButtonText }}
-        </button>
+        <div style="display: flex; justify-content: end; margin-bottom: 10px">
+          <button
+            class="submit-new-bug-report"
+            type="submit"
+            mat-stroked-button
+            color="primary"
+            [disabled]="!newIssueForm.valid || isFormPending"
+          >
+            {{ this.submitButtonText }}
+          </button>
+        </div>
+        <div>
+          <app-md-tips></app-md-tips>
+        </div>
       </div>
 
       <div class="column right">

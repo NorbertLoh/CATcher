@@ -12,6 +12,7 @@ import { TeamAcceptedModule } from './team-accepted/team-accepted.module';
 import { TeamResponseModule } from './team-response/team-response.module';
 import { TesterResponseModule } from './tester-response/tester-response.module';
 import { ViewIssueComponent } from './view-issue.component';
+import { MdTipsModule } from '../md-tips/md-tips.module';
 
 @NgModule({
   exports: [ViewIssueComponent],
@@ -28,7 +29,8 @@ import { ViewIssueComponent } from './view-issue.component';
     IssueComponentsModule,
     LabelDropdownModule,
     MarkdownModule.forChild(),
-    TeamAcceptedModule
+    TeamAcceptedModule,
+    MdTipsModule
   ]
 })
 export class ViewIssueModule {}

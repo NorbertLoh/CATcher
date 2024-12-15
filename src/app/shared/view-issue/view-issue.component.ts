@@ -86,6 +86,10 @@ export class ViewIssueComponent implements OnInit, OnDestroy, OnChanges {
     return this.isIssueDescriptionEditing || this.isTutorResponseEditing || this.isTeamResponseEditing;
   }
 
+  isResponseEditing(): boolean {
+    return this.isTeamResponseEditing || this.isTesterResponseEditing || this.isTutorResponseEditing || this.hasNoTeamResponse();
+  }
+
   updateIssue(newIssue: Issue) {
     this.issue = newIssue;
     this.issueService.updateLocalStore(newIssue);

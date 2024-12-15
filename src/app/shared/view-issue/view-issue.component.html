@@ -65,6 +65,11 @@
         (updateEditState)="updateTutorResponseEditState($event)"
       >
       </app-issue-dispute>
+
+      <!-- Md Tips While Editing -->
+      <div *ngIf="this.isEditing() || this.isResponseEditing()">
+        <app-md-tips></app-md-tips>
+      </div>
     </div>
 
     <div class="column right">
