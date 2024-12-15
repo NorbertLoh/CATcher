@@ -10,6 +10,7 @@ import { IssueComponent } from './issue/issue.component';
 import { NewIssueComponent } from './new-issue/new-issue.component';
 import { PhaseBugReportingRoutingModule } from './phase-bug-reporting-routing.module';
 import { PhaseBugReportingComponent } from './phase-bug-reporting.component';
+import { MdTipsModule } from '../shared/md-tips/md-tips.module';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { PhaseBugReportingComponent } from './phase-bug-reporting.component';
     ViewIssueModule,
     MarkdownModule.forChild(),
     IssueTablesModule,
-    LabelDropdownModule
+    LabelDropdownModule,
+    MdTipsModule
   ],
   declarations: [PhaseBugReportingComponent, NewIssueComponent, IssueComponent]
 })
