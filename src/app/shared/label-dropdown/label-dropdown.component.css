@@ -17,3 +17,9 @@
   display: grid;
   grid-template-columns: auto 20%;
 }
+
+.mat-tooltip {
+  margin: 11px;
+  margin-left: 0;
+  font-size: 14px;
+}
