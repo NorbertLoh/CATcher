@@ -14,7 +14,8 @@ const LABEL_DEFINITION_SHORT = {
   High: 'A flaw that affects most users and causes major problems for users.i.e., makes the product almost unusable for most users.',
   DocumentationBug: 'A flaw in the documentation e.g., a missing step, a wrong instruction, typos',
   FeatureFlaw:
-    'Some functionality missing from a feature delivered in the current version in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not complete',
+    'Some functionality missing from a feature delivered in the current version in a way that the feature becomes ' +
+    'less useful to the intended target user for normal usage. i.e., the feature is not complete',
   FunctionalityBug: 'A functionality does not work as specified/expected'
 };
 
